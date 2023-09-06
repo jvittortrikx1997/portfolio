@@ -5,6 +5,7 @@ import { SectionTitles } from "../section-title";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from 'framer-motion'
 
 export const ContactForm = () => {
   const contactiFormScgema = z.object({
@@ -30,7 +31,11 @@ export const ContactForm = () => {
           titlte="Vamos Trabalhar justos? Entre em contato"
           className="items-center text-center"
         />
-        <form
+        <motion.form
+          initial={{ opacity: 0, y: 50 }}
+          exit={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
           onSubmit={handleSubmit(onSubmit)}
           className="mt-12 w-full flex flex-col gap-4"
         >
@@ -54,7 +59,7 @@ export const ContactForm = () => {
           <Button type="submit" className="mt-6">
             Enviar mensagen <HiArrowNarrowRight size={18} />
           </Button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

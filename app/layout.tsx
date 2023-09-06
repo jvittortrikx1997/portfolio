@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import { Header } from './components/header'
 import { ContactForm } from './components/contact'
 import { Footer } from './components/footer'
+import { BackTopTop } from './components/back-to-top'
 
 const inter = Inter({
   variable: '--font-inter',
