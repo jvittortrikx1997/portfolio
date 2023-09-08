@@ -65,7 +65,7 @@ export const HeroSection = () => {
             PHP (Laravel), NodeJS, MySQL e ferramentas web, meu objetivo é criar
             soluções de alta qualidade e inovadoras, buscando constantemente
             aprimorar minhas habilidades e contribuir para o sucesso dos
-            projetos e equipes de desenvolvim
+            projetos e equipes de desenvolvimento
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[550px]">
             {Experiencias.map((value, i) => (

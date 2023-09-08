@@ -29,8 +29,8 @@ export const ProjectCard = () => {
         <Image
           width={420}
           height={384}
-          src="/images/projeto.jpg"
-          alt="Projeto"
+          src="/images/gurramundial.png"
+          alt="gurramundial"
           className="object-cover rounded-lg"
         />
       </motion.div>
