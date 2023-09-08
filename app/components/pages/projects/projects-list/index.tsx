@@ -27,15 +27,13 @@ export const ProjectsList = () => {
             transition={{ duration: 0.6, delay: i * 0.1 }}
             key={data.id}
           >
-            <Link href={data.src} key={data.title}>
-              <a target="_blank">
+            <Link target="_blank" href={data.link} key={data.title}>
                 <ProjectCard
                   ability={data.ability}
                   src={data.src}
                   subTitle={data.subTitle}
                   title={data.title}
                 />
-              </a>
             </Link>
           </motion.div>
         ))}
