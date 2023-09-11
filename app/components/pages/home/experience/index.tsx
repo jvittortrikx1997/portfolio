@@ -1,6 +1,5 @@
 import { SectionTitles } from "@/app/components/section-title"
 import { ExperienceItem } from "./experience-item"
-import { ExperienceEb } from "./experience-eb"
 
 export const WorkExperience = () => {
     return (
@@ -17,7 +16,6 @@ export const WorkExperience = () => {
 
             <div className="flex flex-col gap-4">
                 <ExperienceItem />
-                <ExperienceEb />
             </div>
         </section>
     )

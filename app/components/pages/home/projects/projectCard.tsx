@@ -80,7 +80,7 @@ export const ProjectCard = () => {
             name="Bootstrap"
           />
         </div>
-        <Link href={"/projects"}>
+        <Link target="_blank" href={"https://guerra-mundial.vercel.app/"}>
           Ver projeto <HiArrowNarrowRight />
         </Link>
       </div>

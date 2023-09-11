@@ -80,9 +80,10 @@ export const HeroSection = () => {
             ))}
           </div>
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <div className="cursor-default  bg-emerald-400/30 p-2 shadow-button hover:bg-emerald-500 rounded-lg flex justify-center text-emerald-400 hover:text-gray-100 items-center gap-2 transition-all">
+            <Button className="hover:shadow-button text-gray-100 transition-all">
               Entre em contato
-            </div>
+              <HiArrowNarrowRight size={18} />
+            </Button>
             <div className="text-2xl text-gray-600 flex items-center justify-center h-20 sm:gap-3 gap-6">
               {MockContacts.map((contact, index, i: any) => (
                 <motion.a
