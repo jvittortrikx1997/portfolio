@@ -16,7 +16,7 @@ export const Projects = () => {
 
         <p className="flex items-center gap-1.5">
           <span className="text-gray-400">Se interessou?</span>
-          <Link href={"/projects"} className="border-2 border-emerald-300 inline-flex bg-emerald-400/30 p-1 rounded hover:bg-emerald-400 hover:text-gray-100 ">
+          <Link href={"/projects"} className="border-2 border-teal-300 inline-flex bg-teal-400/30 p-1 rounded hover:bg-teal-400 hover:text-gray-100 ">
             Ver todos
             <HiArrowNarrowRight />
           </Link>

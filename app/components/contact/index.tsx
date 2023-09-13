@@ -42,19 +42,19 @@ export const ContactForm = () => {
           <input
             {...register("name")}
             placeholder="Nome"
-            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
+            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
           />
           <input
             {...register("email")}
             type="email"
             placeholder="E-mail"
-            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
+            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
           />
           <textarea
             {...register("message")}
             placeholder="Mensagem"
             maxLength={500}
-            className="resize-none w-full h-[130px] bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
+            className="resize-none w-full h-[130px] bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
           />
           <Button type="submit" className="mt-6">
             Enviar mensagen <HiArrowNarrowRight size={18} />

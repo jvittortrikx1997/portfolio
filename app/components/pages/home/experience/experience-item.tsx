@@ -31,7 +31,7 @@ export const ExperienceItem = () => {
             <div className="flex flex-col gap-2 text-sm sm:text-base">
               <a
                 target="_black"
-                className="text-gray-500 hover:text-emerald-500 transition-colors"
+                className="text-gray-500 hover:text-teal-500 transition-colors"
                 href="https://www.linkedin.com/company/somos-login/"
               >
                 @Control361

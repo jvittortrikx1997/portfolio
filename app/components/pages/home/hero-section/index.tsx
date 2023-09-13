@@ -56,7 +56,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:max-w-[530px]"
         >
-          <p className="font-mono text-emerald-400">Olá, meu nome é</p>
+          <p className="font-mono text-teal-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">
             Crystyan Gomes de Moura Ferreira
           </h2>
@@ -80,7 +80,7 @@ export const HeroSection = () => {
             ))}
           </div>
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <div className="flex justify-center items-center bg-emerald-400/20 p-2 rounded hover:bg-emerald-400 border-emerald-300 border-2 cursor-default hover:shadow-button text-gray-100 transition-all">
+            <div className="flex justify-center items-center bg-teal-400/20 p-2 rounded hover:bg-teal-400 border-teal-300 border-2 cursor-default hover:shadow-button text-gray-100 transition-all">
               Entre em contato
             </div>
             <div className="text-2xl text-gray-600 flex items-center justify-center h-20 sm:gap-3 gap-6">
@@ -89,7 +89,7 @@ export const HeroSection = () => {
                   href={contact.url}
                   key={`contact-${index}`}
                   target="_blanck"
-                  className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-emerald-400/50 hover:bg-emerald-400 hover:shadow-button hover:border-2 hover:border-emerald-300"
+                  className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
                 >
                   {contact.icon}
                 </motion.a>
@@ -105,10 +105,10 @@ export const HeroSection = () => {
         className="h-full w-full flex justify-center items-center lg:ml-36">
           <Image
             width={420}
-            height={402}
+            height={420}
             src="/images/crystyan.jpg"
             alt="foto de perfil"
-            className="p-1 border-2 border-emerald-500 w-[300px] h-[300px] lg:w-[420px] mb-6 lg:mb-0 rounded-lg object-cover hover:shadow-button hover:border-emerald-200 transition-all"
+            className="p-1 border-2 border-teal-500 w-[300px] h-[300px] lg:w-[420px] mb-6 lg:mb-0 lg:rounded-lg rounded-full object-cover hover:shadow-button hover:border-teal-200 transition-all"
           />
         </motion.div>
       </div>
