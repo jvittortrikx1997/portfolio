@@ -52,7 +52,7 @@ export const HeroSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="w-full lg:max-w-[530px]"
+          className="w-full mt-5 lg:max-w-[530px]"
         >
           <p className="font-mono text-teal-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">
