@@ -1,6 +1,8 @@
 "use client";
 
+import { Button } from "@/app/components/button";
 import { TechBadge } from "@/app/components/tech-badge";
+import { HiArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 import {
   TbBrandGithub,
@@ -52,18 +54,18 @@ export const HeroSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="w-full mt-5 lg:max-w-[530px]"
+          className="w-full lg:max-w-[530px]"
         >
           <p className="font-mono text-teal-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">
             Crystyan Gomes de Moura Ferreira
           </h2>
-          <p className="text-gray-300 my-6 text-sm sm:text-base">
-            A constante vontade de melhorar é meu combustível. Vejo cada desafio
-            como uma maneira de me desafiar, de expandir meu conhecimento e de
-            crescer profissional e pessoalmente. A jornada da programação é uma
-            estrada interminável, e estou ansioso para percorrê-la, sempre
-            buscando me tornar o melhor desenvolvedor que posso ser.
+          <p className="text-gray-200 my-6 text-sm sm:text-base">
+          A constante vontade de melhorar é meu combustível. Vejo cada desafio
+          como uma maneira de me desafiar, de expandir meu conhecimento e de
+          crescer profissional e pessoalmente. A jornada da programação é uma
+          estrada interminável, e estou ansioso para percorrê-la, sempre
+          buscando me tornar o melhor desenvolvedor que posso ser.
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[550px]">
             {Experiencias.map((value, i) => (
@@ -73,7 +75,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1}}
               />
             ))}
           </div>
@@ -96,12 +98,11 @@ export const HeroSection = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 200, scale: 0.5 }}
-          exit={{ opacity: 0, y: 200, scale: 0.5 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="h-full w-full flex justify-center items-center lg:ml-36"
-        >
+        initial={{ opacity: 0, y: 200, scale: 0.5 }} 
+        exit={{ opacity: 0, y: 200, scale: 0.5 }} 
+        whileInView={{ opacity: 1, y: 0, scale: 1 }} 
+        transition={{ duration: 0.5 }}
+        className="h-full w-full flex justify-center items-center lg:ml-36">
           <Image
             width={420}
             height={420}
