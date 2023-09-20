@@ -60,7 +60,7 @@ export const HeroSection = () => {
           <h2 className="text-4xl font-medium mt-2">
             Crystyan Gomes de Moura Ferreira
           </h2>
-          <p className="text-gray-200 my-6 text-sm sm:text-base">
+          <p className="text-gray-200 my-6 text-base sm:text-base">
           A constante vontade de melhorar é meu combustível. Vejo cada desafio
           como uma maneira de me desafiar, de expandir meu conhecimento e de
           crescer profissional e pessoalmente. A jornada da programação é uma
