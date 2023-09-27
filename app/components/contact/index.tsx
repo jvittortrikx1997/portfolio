@@ -10,7 +10,8 @@ import { Modal } from "../modal";
 import { useState } from "react";
 
 export const ContactForm = () => {
-  const [modal, setModal] = useState("hidden");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const contactiFormScgema = z.object({
     name: z.string().min(3).max(100),
     email: z.string().email(),
@@ -28,7 +29,7 @@ export const ContactForm = () => {
       watch("email") === "giulia@meuamor.com" &&
       watch("name") === "Giulia&Crystyan"
     ) {
-      setModal("flex");
+      setIsModalOpen(true);
     }
   };
   return (
@@ -39,7 +40,7 @@ export const ContactForm = () => {
           titlte="Vamos Trabalhar juntos? Entre em contato"
           className="items-center text-center"
         />
-        <Modal disable={modal} onCLick={() => setModal("hidden")} />
+        <Modal isOpen={isModalOpen} onCLick={() => setIsModalOpen(false)} />
         <motion.form
           initial={{ opacity: 0, y: 50 }}
           exit={{ opacity: 0, y: 50 }}

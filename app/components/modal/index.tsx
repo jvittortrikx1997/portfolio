@@ -1,8 +1,9 @@
 import { AiTwotoneHeart } from "react-icons/Ai";
 
-export const Modal = ({disable = '', onCLick = () => {}}) => {
+export const Modal = ({isOpen = false, onCLick = () => {}}) => {
+  if (!isOpen) return null;
   return (
-    <section onClick={onCLick} className={`cursor-pointer h-full w-full ${disable} items-center justify-center`}>
+    <section onClick={onCLick} className={`cursor-pointer h-full w-full flex items-center justify-center`}>
         <div className="h-60 absolute w-72 bg-gray-800 border border-teal-400 rounded">
           <div className="w-full h-full flex flex-col items-center justify-center">
             <div className="w-full h-full flex flex-col justify-center items-center">
