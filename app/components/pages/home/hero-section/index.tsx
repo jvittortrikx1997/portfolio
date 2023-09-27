@@ -1,8 +1,6 @@
 "use client";
 
-import { Button } from "@/app/components/button";
 import { TechBadge } from "@/app/components/tech-badge";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 import {
   TbBrandGithub,
