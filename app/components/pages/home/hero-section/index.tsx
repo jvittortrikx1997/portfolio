@@ -10,6 +10,7 @@ import {
   TbBrandWhatsapp,
 } from "react-icons/tb";
 import Image from "next/image";
+import { AiFillFileText } from "react-icons/Ai";
 
 const MockContacts = [
   {
@@ -47,7 +48,7 @@ const Experiencias = [
 
 export const HeroSection = () => {
   return (
-    <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
+    <section className="w-full lg:h-full bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
       <div className="container bg-black/40 rounded flex items-start justify-between flex-col-reverse lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -61,11 +62,11 @@ export const HeroSection = () => {
             Crystyan Gomes de Moura Ferreira
           </h2>
           <p className="text-gray-200 my-6 text-base sm:text-base">
-          A constante vontade de melhorar é meu combustível. Vejo cada desafio
-          como uma maneira de me desafiar, de expandir meu conhecimento e de
-          crescer profissional e pessoalmente. A jornada da programação é uma
-          estrada interminável, e estou ansioso para percorrê-la, sempre
-          buscando me tornar o melhor desenvolvedor que posso ser.
+            A constante vontade de melhorar é meu combustível. Vejo cada desafio
+            como uma maneira de me desafiar, de expandir meu conhecimento e de
+            crescer profissional e pessoalmente. A jornada da programação é uma
+            estrada interminável, e estou ansioso para percorrê-la, sempre
+            buscando me tornar o melhor desenvolvedor que posso ser.
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[550px]">
             {Experiencias.map((value, i) => (
@@ -75,7 +76,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1}}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               />
             ))}
           </div>
@@ -94,15 +95,24 @@ export const HeroSection = () => {
                   {contact.icon}
                 </motion.a>
               ))}
+              <motion.a
+                href="doc/CrystyanCurriculo.pdf"
+                download
+                target="_blanck"
+                className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
+              >
+                <AiFillFileText />
+              </motion.a>
             </div>
           </div>
         </motion.div>
         <motion.div
-        initial={{ opacity: 0, y: 200, scale: 0.5 }} 
-        exit={{ opacity: 0, y: 200, scale: 0.5 }} 
-        whileInView={{ opacity: 1, y: 0, scale: 1 }} 
-        transition={{ duration: 0.5 }}
-        className="h-full w-full flex justify-center items-center lg:ml-36">
+          initial={{ opacity: 0, y: 200, scale: 0.5 }}
+          exit={{ opacity: 0, y: 200, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="h-full w-full flex justify-center items-center lg:ml-36"
+        >
           <Image
             width={420}
             height={420}

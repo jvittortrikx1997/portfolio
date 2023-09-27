@@ -20,7 +20,7 @@ export const ContactForm = () => {
 
   type ContactFormData = z.infer<typeof contactiFormScgema>;
 
-  const { handleSubmit, register, watch, setValue } = useForm<ContactFormData>({
+  const { handleSubmit, register, watch } = useForm<ContactFormData>({
     resolver: zodResolver(contactiFormScgema),
   });
 
