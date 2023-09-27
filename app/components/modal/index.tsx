@@ -1,5 +1,3 @@
-import { AiTwotoneHeart } from "react-icons/Ai";
-
 export const Modal = ({isOpen = false, onCLick = () => {}}) => {
   if (!isOpen) return null;
   return (
@@ -14,9 +12,7 @@ export const Modal = ({isOpen = false, onCLick = () => {}}) => {
               <p className="font-medium text-lg text-gray-400">Só queria te dizer o quanto te amo. Você é minha felicidade, meu tudo</p>
             </div>
             <div className="w-full h-full gap-4 flex justify-center items-center">
-              <AiTwotoneHeart color="#f30c0c" />
               <p className="font-medium text-lg text-gray-100">Com amor, Crystyan</p>
-              <AiTwotoneHeart color="#f30c0c" />
             </div>
           </div>
         </div>
