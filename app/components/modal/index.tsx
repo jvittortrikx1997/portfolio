@@ -1,4 +1,4 @@
-import { AiTwotoneHeart } from 'react-icons/Ai'
+import { GiNestedHearts } from 'react-icons/gi'
 
 export const Modal = ({ isOpen = false, onCLick = () => {} }) => {
   if (!isOpen) return null
@@ -20,11 +20,11 @@ export const Modal = ({ isOpen = false, onCLick = () => {} }) => {
             </p>
           </div>
           <div className="w-full h-full gap-4 flex justify-center items-center">
-            <AiTwotoneHeart />
+            <GiNestedHearts color="#db0505" />
             <p className="font-medium text-lg text-gray-100">
               Com amor, Crystyan
             </p>
-            <AiTwotoneHeart />
+            <GiNestedHearts color="#db0505" />
           </div>
         </div>
       </div>

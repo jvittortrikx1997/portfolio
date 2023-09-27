@@ -4,7 +4,7 @@ import { TechBadge } from '@/app/components/tech-badge'
 import { motion } from 'framer-motion'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 import Image from 'next/image'
-import { AiFillFileText } from 'react-icons/Ai'
+import { BsFiletypePdf } from 'react-icons/bs'
 
 const MockContacts = [
   {
@@ -95,7 +95,7 @@ export const HeroSection = () => {
                 target="_blanck"
                 className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
               >
-                <AiFillFileText />
+                <BsFiletypePdf />
               </motion.a>
             </div>
           </div>
