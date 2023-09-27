@@ -5,9 +5,12 @@ import { SectionTitles } from "../section-title";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
+import { Modal } from "../modal";
+import { useState } from "react";
 
 export const ContactForm = () => {
+  const [modal, setModal] = useState('hidden')
   const contactiFormScgema = z.object({
     name: z.string().min(3).max(100),
     email: z.string().email(),
@@ -21,8 +24,11 @@ export const ContactForm = () => {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    if(watch('email') === 'kassia@kassia.com' && watch('name') === 'kassia'){
-      setValue('message', 'eu te acho muito linda kkkkk')
+    if (
+      watch("email") === "giulia@meuamor.com" &&
+      watch("name") === "Giulia&Crystyan"
+    ) {
+      setModal('flex');
     }
   };
   return (
@@ -41,6 +47,7 @@ export const ContactForm = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="mt-12 w-full flex flex-col gap-4"
         >
+          <Modal disable={modal} onCLick={() => setModal('hidden')}/>
           <input
             {...register("name")}
             placeholder="Nome"
