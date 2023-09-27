@@ -1,19 +1,19 @@
-"use client";
-import Link from "next/link";
-import { ProjectCard } from "./project-card";
-import { motion } from "framer-motion";
+'use client'
+import Link from 'next/link'
+import { ProjectCard } from './project-card'
+import { motion } from 'framer-motion'
 
 const projectProps = [
   {
-    link: "https://guerra-mundial.vercel.app/",
+    link: 'https://guerra-mundial.vercel.app/',
     id: 0,
-    src: "/images/gurramundial.png",
-    title: "Segunda Guerra",
+    src: '/images/gurramundial.png',
+    title: 'Segunda Guerra',
     subTitle:
-      "Meu primeiro projeto que conta a historia da segunda guerra mundial",
-    ability: "HTML, CSS, bootstrap",
+      'Meu primeiro projeto que conta a historia da segunda guerra mundial',
+    ability: 'HTML, CSS, bootstrap',
   },
-];
+]
 
 export const ProjectsList = () => {
   return (
@@ -28,16 +28,16 @@ export const ProjectsList = () => {
             key={data.id}
           >
             <Link target="_blank" href={data.link} key={data.title}>
-                <ProjectCard
-                  ability={data.ability}
-                  src={data.src}
-                  subTitle={data.subTitle}
-                  title={data.title}
-                />
+              <ProjectCard
+                ability={data.ability}
+                src={data.src}
+                subTitle={data.subTitle}
+                title={data.title}
+              />
             </Link>
           </motion.div>
         ))}
       </>
     </section>
-  );
-};
+  )
+}

@@ -1,19 +1,19 @@
-import { getRelativeTimeString } from "@/app/utils/get-relative-time";
-import { ReactNode } from "react";
+import { getRelativeTimeString } from '@/app/utils/get-relative-time'
+import { ReactNode } from 'react'
 
 type KnownTechProps = {
   tech: {
-    icon: ReactNode;
-    name: string;
-    startDate: string;
-  };
-};
+    icon: ReactNode
+    name: string
+    startDate: string
+  }
+}
 
 export const KnownTech = ({ tech }: KnownTechProps) => {
   const relativoTime = getRelativeTimeString(
     new Date(tech.startDate),
-    "pt-BR"
-  )?.replace("há", "");
+    'pt-BR',
+  )?.replace('há', '')
   return (
     <div className="p-6 rounded-lg bg-gray-600/20  justify-between text-gray-500 flex flex-col hover:text-teal-500 hover:bg-gray-600/30 transition-all">
       <div className="block items-center">
@@ -22,5 +22,5 @@ export const KnownTech = ({ tech }: KnownTechProps) => {
       </div>
       {tech.icon}
     </div>
-  );
-};
+  )
+}

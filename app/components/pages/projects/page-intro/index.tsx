@@ -1,7 +1,7 @@
-"use client"
-import { Link } from "@/app/components/Link";
-import { SectionTitles } from "@/app/components/section-title";
-import { HiArrowNarrowLeft } from "react-icons/hi";
+'use client'
+import { Link } from '@/app/components/Link'
+import { SectionTitles } from '@/app/components/section-title'
+import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 
 export const PageIntro = () => {
@@ -12,10 +12,10 @@ export const PageIntro = () => {
         titlte="Meus Projetos"
         className="text-center items-center [&>h3]:text-4xl"
       />
-      <motion.div 
-        initial={{ opacity: 0, y: 100}}
-        exit={{ opacity: 0, y: 100}}
-        whileInView={{ opacity: 1, y: 0}}
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        exit={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 5 }}
         className="flex flex-col items-center justify-center"
       >
@@ -24,11 +24,11 @@ export const PageIntro = () => {
           vontade e explore os projetos para ver como foram criados, as
           tecnologias utilizadas e as funcionalidades implementadas.
         </p>
-        <Link href={"/"}>
+        <Link href={'/'}>
           <HiArrowNarrowLeft size={20} />
           Voltar para Home
         </Link>
       </motion.div>
     </section>
-  );
-};
+  )
+}

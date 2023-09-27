@@ -1,33 +1,38 @@
 export function getRelativeTimeString(
-    date: Date | number,
-    lang = navigator.language,
+  date: Date | number,
+  lang = navigator.language,
 ): string {
+  const timeMs = typeof date === 'number' ? date : date.getTime()
 
-    const timeMs = typeof date === "number" ? date : date.getTime();
+  const deltaSeconds = Math.round((timeMs - Date.now()) / 1000)
 
-   const deltaSeconds = Math.round((timeMs - Date.now()) / 1000)
+  const cutoffs = [
+    60,
+    3600,
+    86400,
+    86400 * 7,
+    86400 * 30,
+    86400 * 365,
+    Infinity,
+  ]
 
-    const cutoffs = [
-        60,
-        3600,
-        86400,
-        86400 * 7,
-        86400 * 30,
-        86400 * 365,
-        Infinity,
-    ]
+  const unitIndex = cutoffs.findIndex(
+    (cutoff) => cutoff > Math.abs(deltaSeconds),
+  )
 
-    const unitIndex = cutoffs.findIndex(
-        (cutoff) => cutoff > Math.abs(deltaSeconds)
-    )
+  const units: Intl.RelativeTimeFormatUnit[] = [
+    'second',
+    'minute',
+    'hour',
+    'day',
+    'week',
+    'month',
+    'year',
+  ]
 
-    const units: Intl.RelativeTimeFormatUnit[] = ['second', 'minute', 'hour', 'day', 'week', 'month', 'year'];
+  const divisor = unitIndex ? cutoffs[unitIndex - 1] : 1
 
-    const divisor = unitIndex ? cutoffs[unitIndex - 1] : 1
+  const rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' })
 
-    const rtf = new Intl.RelativeTimeFormat(lang, {numeric: 'auto'})
-
-    return rtf.format(Math.floor(deltaSeconds / divisor), units[unitIndex])
-
-
+  return rtf.format(Math.floor(deltaSeconds / divisor), units[unitIndex])
 }

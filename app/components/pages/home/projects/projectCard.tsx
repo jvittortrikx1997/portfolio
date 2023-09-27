@@ -1,16 +1,16 @@
-"use client";
-import { Link } from "@/app/components/Link";
-import { TechBadge } from "@/app/components/tech-badge";
-import Image from "next/image";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { motion } from "framer-motion";
+'use client'
+import { Link } from '@/app/components/Link'
+import { TechBadge } from '@/app/components/tech-badge'
+import Image from 'next/image'
+import { HiArrowNarrowRight } from 'react-icons/hi'
+import { motion } from 'framer-motion'
 
 export const ProjectCard = () => {
   const animeProps = {
     initial: { opacity: 0, y: 50 },
     whileInView: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: 50 },
-  };
+  }
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -80,10 +80,10 @@ export const ProjectCard = () => {
             name="Bootstrap"
           />
         </div>
-        <Link target="_blank" href={"https://guerra-mundial.vercel.app/"}>
+        <Link target="_blank" href={'https://guerra-mundial.vercel.app/'}>
           Ver projeto <HiArrowNarrowRight />
         </Link>
       </div>
     </motion.div>
-  );
-};
+  )
+}

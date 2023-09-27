@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 type cardProps = {
   src: string
@@ -21,12 +21,14 @@ export const ProjectCard = ({ ability, src, subTitle, title }: cardProps) => {
         />
       </div>
       <div className="flex-1 flex flex-col p-8">
-        <strong className="font-medium text-gray-50/90 group-hover:text-teal-500 transition-all">{title}</strong>
-        <p className="mt-2 text-gray-400 line-clamp-4">
-          {subTitle}
-        </p>
-        <span className="text-gray-300 text-sm font-medium block mt-auto truncate">{ability}</span>
+        <strong className="font-medium text-gray-50/90 group-hover:text-teal-500 transition-all">
+          {title}
+        </strong>
+        <p className="mt-2 text-gray-400 line-clamp-4">{subTitle}</p>
+        <span className="text-gray-300 text-sm font-medium block mt-auto truncate">
+          {ability}
+        </span>
       </div>
     </div>
-  );
-};
+  )
+}

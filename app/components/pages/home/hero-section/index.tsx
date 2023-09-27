@@ -1,48 +1,44 @@
-"use client";
+'use client'
 
-import { TechBadge } from "@/app/components/tech-badge";
-import { motion } from "framer-motion";
-import {
-  TbBrandGithub,
-  TbBrandLinkedin,
-  TbBrandWhatsapp,
-} from "react-icons/tb";
-import Image from "next/image";
-import { AiFillFileText } from "react-icons/Ai";
+import { TechBadge } from '@/app/components/tech-badge'
+import { motion } from 'framer-motion'
+import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
+import Image from 'next/image'
+import { AiFillFileText } from 'react-icons/Ai'
 
 const MockContacts = [
   {
-    url: "https://github.com/Crys95",
+    url: 'https://github.com/Crys95',
     icon: <TbBrandGithub />,
   },
   {
-    url: "https://www.linkedin.com/in/crystyan-gomes-dev/",
+    url: 'https://www.linkedin.com/in/crystyan-gomes-dev/',
     icon: <TbBrandLinkedin />,
   },
   {
-    url: "https://api.whatsapp.com/send/?phone=+5511944478209&text=Ol%C3%A1+Crystyan%2C+tudo+certo%3F&type=phone_number&app_absent=0",
+    url: 'https://api.whatsapp.com/send/?phone=+5511944478209&text=Ol%C3%A1+Crystyan%2C+tudo+certo%3F&type=phone_number&app_absent=0',
     icon: <TbBrandWhatsapp />,
   },
-];
+]
 
 const Experiencias = [
-  { name: "JavaScript" },
-  { name: "Typescript" },
-  { name: "ReactJs" },
-  { name: "NextJs" },
-  { name: "React Native" },
-  { name: "Tailwind" },
-  { name: "Styled Components" },
-  { name: "Material Ui" },
-  { name: "PHP" },
-  { name: "Laravel" },
-  { name: "NodeJs" },
-  { name: "Redux" },
-  { name: "ContextApi" },
-  { name: "Microsserviços" },
-  { name: "MySQL" },
-  { name: "Docker" },
-];
+  { name: 'JavaScript' },
+  { name: 'Typescript' },
+  { name: 'ReactJs' },
+  { name: 'NextJs' },
+  { name: 'React Native' },
+  { name: 'Tailwind' },
+  { name: 'Styled Components' },
+  { name: 'Material Ui' },
+  { name: 'PHP' },
+  { name: 'Laravel' },
+  { name: 'NodeJs' },
+  { name: 'Redux' },
+  { name: 'ContextApi' },
+  { name: 'Microsserviços' },
+  { name: 'MySQL' },
+  { name: 'Docker' },
+]
 
 export const HeroSection = () => {
   return (
@@ -121,5 +117,5 @@ export const HeroSection = () => {
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
