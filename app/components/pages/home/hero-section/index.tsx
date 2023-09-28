@@ -75,7 +75,7 @@ export const HeroSection = () => {
             ))}
           </div>
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <div className="flex justify-center items-center bg-teal-400/20 p-2 rounded hover:bg-teal-400 border-teal-300 border-2 cursor-default hover:shadow-button text-gray-100 transition-all">
+            <div className="flex justify-center items-center bg-teal-400/50 hover:bg-teal-400 p-2 rounded cursor-default hover:shadow-button text-gray-100 transition-all">
               Entre em contato
             </div>
             <div className="text-2xl text-gray-600 flex items-center justify-center h-20 sm:gap-3 gap-6">

@@ -18,7 +18,7 @@ export const Projects = () => {
           <span className="text-gray-400">Se interessou?</span>
           <Link
             href={'/projects'}
-            className="border-2 border-teal-300 inline-flex bg-teal-400/30 p-1 rounded hover:bg-teal-400 hover:text-gray-100 "
+            className="inline-flex text-teal-400 bg-teal-400/30 p-1 rounded-lg hover:bg-teal-400 hover:text-gray-100 "
           >
             Ver todos
             <HiArrowNarrowRight />
