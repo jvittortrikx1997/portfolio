@@ -43,7 +43,7 @@ const Experiencias = [
 export const HeroSection = () => {
   return (
     <section className="w-full lg:h-full bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
-      <div className="container bg-black/40 rounded flex items-start justify-between flex-col-reverse lg:flex-row">
+      <div className="container rounded flex items-start flex-col-reverse lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +105,7 @@ export const HeroSection = () => {
           exit={{ opacity: 0, y: 200, scale: 0.5 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="h-full w-full flex justify-center items-center lg:ml-36"
+          className="w-full lg:h-[500px] flex items-center justify-center lg:ml-36"
         >
           <Image
             width={420}

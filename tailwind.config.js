@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-image': "url('/images/gif1.gif')",
+        'hero-image': "url('/images/tec.png')",
       },
       fontFamily: {
         mono: ['var(--font-plex-mono)', 'monospace'],
