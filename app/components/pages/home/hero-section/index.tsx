@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 import Image from 'next/image'
 import { BsFiletypePdf } from 'react-icons/bs'
+import { ParticleComponent } from '@/app/components/particles/Particules'
 
 const MockContacts = [
   {
@@ -42,7 +43,8 @@ const Experiencias = [
 
 export const HeroSection = () => {
   return (
-    <section className="w-full lg:h-full bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
+    <section className="w-full lg:h-full bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
+      <ParticleComponent />
       <div className="container rounded flex items-start flex-col-reverse lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

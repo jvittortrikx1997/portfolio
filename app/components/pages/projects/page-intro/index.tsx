@@ -3,10 +3,12 @@ import { Link } from '@/app/components/Link'
 import { SectionTitles } from '@/app/components/section-title'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { motion } from 'framer-motion'
+import { ParticleComponent } from '@/app/components/particles/Particules'
 
 export const PageIntro = () => {
   return (
-    <section className="w-full h-[450px] lg:h-[630px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-2">
+    <section className="w-full h-[450px] lg:h-[630px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-2">
+      <ParticleComponent />
       <SectionTitles
         subtitle="projects"
         titlte="Meus Projetos"

@@ -58,26 +58,28 @@ const stack = [
 
 export const KnownTeachs = () => {
   return (
-    <section className="container py-16">
-      <SectionTitles subtitle="competências" titlte="Conhecimentos" />
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
-        {stack.map((stak, i) => (
-          <motion.div
-            key={stak.name}
-            initial={{ opacity: 0, x: -100 }}
-            exit={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: i * 0.2 }}
-          >
-            <KnownTech
-              tech={{
-                icon: stak.icon,
-                name: stak.name,
-                startDate: stak.startDate,
-              }}
-            />
-          </motion.div>
-        ))}
+    <section className="bg-slate-900">
+      <div className="container py-16">
+        <SectionTitles subtitle="competências" titlte="Conhecimentos" />
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
+          {stack.map((stak, i) => (
+            <motion.div
+              key={stak.name}
+              initial={{ opacity: 0, x: -100 }}
+              exit={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.2 }}
+            >
+              <KnownTech
+                tech={{
+                  icon: stak.icon,
+                  name: stak.name,
+                  startDate: stak.startDate,
+                }}
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   )
