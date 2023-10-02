@@ -29,7 +29,7 @@ export const ParticleComponent = () => {
         options={{
           background: {
             color: {
-              value: '#000',
+              value: '#000000',
             },
           },
           fpsLimit: 120,
@@ -60,7 +60,7 @@ export const ParticleComponent = () => {
               value: '#1bd8bf',
             },
             links: {
-              color: '#ffffff',
+              color: '#515152',
               distance: 150,
               enable: true,
               opacity: 0.5,
