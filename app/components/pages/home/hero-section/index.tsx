@@ -2,25 +2,8 @@
 
 import { TechBadge } from '@/app/components/tech-badge'
 import { motion } from 'framer-motion'
-import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 import Image from 'next/image'
-import { BsFiletypePdf } from 'react-icons/bs'
 import { ParticleComponent } from '@/app/components/particles/Particules'
-
-const MockContacts = [
-  {
-    url: 'https://github.com/Crys95',
-    icon: <TbBrandGithub />,
-  },
-  {
-    url: 'https://www.linkedin.com/in/crystyan-gomes-dev/',
-    icon: <TbBrandLinkedin />,
-  },
-  {
-    url: 'https://api.whatsapp.com/send/?phone=+5511944478209&text=Ol%C3%A1+Crystyan%2C+tudo+certo%3F&type=phone_number&app_absent=0',
-    icon: <TbBrandWhatsapp />,
-  },
-]
 
 const Experiencias = [
   { name: 'JavaScript' },
@@ -75,31 +58,6 @@ export const HeroSection = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               />
             ))}
-          </div>
-          <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <div className="flex justify-center items-center bg-teal-400/50 hover:bg-teal-400 p-2 rounded cursor-default hover:shadow-button text-gray-100 transition-all">
-              Entre em contato
-            </div>
-            <div className="text-2xl text-gray-600 flex items-center justify-center h-20 sm:gap-3 gap-6">
-              {MockContacts.map((contact, index, i: any) => (
-                <motion.a
-                  href={contact.url}
-                  key={`contact-${index}`}
-                  target="_blanck"
-                  className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
-                >
-                  {contact.icon}
-                </motion.a>
-              ))}
-              <motion.a
-                href="doc/CrystyanCurriculo.pdf"
-                download
-                target="_blanck"
-                className="text-gray-100 w-12 h-12 sm:h-9 sm:w-9 hover:h-12 hover:w-12 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
-              >
-                <BsFiletypePdf />
-              </motion.a>
-            </div>
           </div>
         </motion.div>
         <motion.div

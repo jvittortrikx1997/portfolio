@@ -1,10 +1,8 @@
 'use client'
-import { HiArrowNarrowRight } from 'react-icons/hi'
-import { Button } from '../button'
+import { BsFiletypePdf } from 'react-icons/bs'
 import { SectionTitles } from '../section-title'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
+import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
+import { MdEmail } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { Modal } from '../modal'
 import { useState } from 'react'
@@ -12,64 +10,61 @@ import { useState } from 'react'
 export const ContactForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const contactiFormScgema = z.object({
-    name: z.string().min(3).max(100),
-    email: z.string().email(),
-    message: z.string().max(500),
-  })
+  const MockContacts = [
+    {
+      url: 'https://github.com/Crys95',
+      icon: <TbBrandGithub />,
+    },
+    {
+      url: 'https://www.linkedin.com/in/crystyan-gomes-dev/',
+      icon: <TbBrandLinkedin />,
+    },
+    {
+      url: 'https://api.whatsapp.com/send/?phone=+5511944478209&text=Ol%C3%A1+Crystyan%2C+tudo+certo%3F&type=phone_number&app_absent=0',
+      icon: <TbBrandWhatsapp />,
+    },
+  ]
 
-  type ContactFormData = z.infer<typeof contactiFormScgema>
-
-  const { handleSubmit, register, watch } = useForm<ContactFormData>({
-    resolver: zodResolver(contactiFormScgema),
-  })
-
-  const onSubmit = (data: ContactFormData) => {
-    if (
-      watch('email') === 'giulia@meuamor.com' &&
-      watch('name') === 'Giulia&Crystyan'
-    ) {
-      setIsModalOpen(true)
-    }
-  }
   return (
     <section className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950">
       <div className="w-full max-w-[420px] mx-auto">
         <SectionTitles
           subtitle="Contato"
-          titlte="Vamos Trabalhar juntos? Entre em contato"
+          titlte="Vamos Trabalhar juntos?"
           className="items-center text-center"
         />
         <Modal isOpen={isModalOpen} onCLick={() => setIsModalOpen(false)} />
-        <motion.form
-          initial={{ opacity: 0, y: 50 }}
-          exit={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          onSubmit={handleSubmit(onSubmit)}
-          className="mt-12 w-full flex flex-col gap-4"
-        >
-          <input
-            {...register('name')}
-            placeholder="Nome"
-            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
-          />
-          <input
-            {...register('email')}
-            type="email"
-            placeholder="E-mail"
-            className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
-          />
-          <textarea
-            {...register('message')}
-            placeholder="Mensagem"
-            maxLength={500}
-            className="resize-none w-full h-[130px] bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-teal-600"
-          />
-          <Button type="submit" className="mt-6">
-            Enviar mensagem <HiArrowNarrowRight size={18} />
-          </Button>
-        </motion.form>
+        <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col">
+          <div className="flex h-12 sm:w-72 justify-center items-center bg-teal-400/50 hover:bg-teal-400 p-2 rounded cursor-default hover:shadow-button text-gray-100 transition-all">
+            Entre em contato
+          </div>
+          <div className="text-2xl text-gray-600 flex items-center justify-center h-20 sm:gap-3 gap-6">
+            {MockContacts.map((contact, index, i: any) => (
+              <motion.a
+                href={contact.url}
+                key={`contact-${index}`}
+                target="_blanck"
+                className="text-gray-100 w-12 h-12 hover:h-14 hover:w-14 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
+              >
+                {contact.icon}
+              </motion.a>
+            ))}
+            <motion.a
+              href="mailto:gomescrystyan@gmail.com"
+              className="text-gray-100 w-12 h-12 hover:h-14 hover:w-14 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
+            >
+              <MdEmail />
+            </motion.a>
+            <motion.a
+              href="doc/CrystyanCurriculo.pdf"
+              download
+              target="_blanck"
+              className="text-gray-100 w-12 h-12 hover:h-14 hover:w-14 flex justify-center items-center transition-all rounded-lg bg-teal-400/50 hover:bg-teal-400 hover:shadow-button hover:border-2 hover:border-teal-300"
+            >
+              <BsFiletypePdf />
+            </motion.a>
+          </div>
+        </div>
       </div>
     </section>
   )
