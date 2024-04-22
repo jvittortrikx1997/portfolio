@@ -70,9 +70,9 @@ export const HeroSection = () => {
           <Image
             width={420}
             height={420}
-            src="/images/crystyan.jpg"
+            src="/images/crystyan4.jpg"
             alt="foto de perfil"
-            className="p-1 border-2 border-teal-500 w-[300px] h-[300px] lg:w-[420px] mb-6 lg:mb-0 lg:rounded-lg rounded-full object-cover hover:shadow-button hover:border-teal-200 transition-all"
+            className="p-1 border-2 border-teal-500 w-[300px] h-full lg:w-[420px] mb-6 lg:mb-0 lg:rounded-lg rounded-full object-cover hover:shadow-button hover:border-teal-200 transition-all"
           />
         </motion.div>
       </div>
