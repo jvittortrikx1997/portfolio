@@ -76,8 +76,7 @@ export const experiences = [
       • Levantamento e documentação de requisitos para melhorias de sistemas.<br />
       • Manutenção e suporte de sistemas desenvolvidos em Delphi e PHP.<br />
       • Implementação de software e treinamento de usuários em clientes.<br />
-      • Configuração de servidores, instalação de bancos de dados e gerenciamento de backups.<br />
-    `,
+      • Configuração de servidores, instalação de bancos de dados e gerenciamento de backups.<br />`,
     copetencias: ExperienciasEb,
   },
 ];
