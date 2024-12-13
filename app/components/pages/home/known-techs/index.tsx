@@ -3,56 +3,82 @@ import { SectionTitles } from '@/app/components/section-title'
 import { KnownTech } from './known-tech'
 import { motion } from 'framer-motion'
 import {
-  TbBrandNextjs,
-  TbBrandReact,
-  TbBrandJavascript,
-  TbBrandTypescript,
+  TbBrandPhp,
   TbBrandLaravel,
+  TbBrandJavascript,
+  TbBrandReact,
+  TbBrandNextjs,
+  TbBrandPython,
   TbBrandDocker,
   TbBrandMysql,
-  TbBrandPhp,
+  TbSql,
+  TbBrandBitbucket,
+  TbBrandAzure,
+  TbBrandGit
+
+
 } from 'react-icons/tb'
 
 const stack = [
   {
-    icon: <TbBrandReact size={30} />,
-    name: 'ReactJs',
-    startDate: '2022-05-30',
-  },
-  {
-    icon: <TbBrandNextjs size={30} />,
-    name: 'NextJs',
-    startDate: '2022-07-30',
-  },
-  {
-    icon: <TbBrandJavascript size={30} />,
-    name: 'JavaScript',
-    startDate: '2022-05-30',
-  },
-  {
-    icon: <TbBrandTypescript size={30} />,
-    name: 'TypeScript',
-    startDate: '2022-07-30',
+    icon: <TbBrandPhp size={30} />,
+    name: 'PHP',
+    startDate: '2016-03-01',
   },
   {
     icon: <TbBrandLaravel size={30} />,
     name: 'Laravel',
-    startDate: '2022-07-30',
+    startDate: '2020-07-30',
   },
   {
-    icon: <TbBrandPhp size={30} />,
-    name: 'PHP',
-    startDate: '2022-07-30',
+    icon: <TbBrandJavascript size={30} />,
+    name: 'JavaScript',
+    startDate: '2016-05-30',
   },
   {
-    icon: <TbBrandMysql size={30} />,
-    name: 'MySQL',
-    startDate: '2022-07-30',
+    icon: <TbBrandReact size={30} />,
+    name: 'React',
+    startDate: '2023-07-30',
+  },
+  {
+    icon: <TbBrandNextjs size={30} />,
+    name: 'Nextjs',
+    startDate: '2023-07-30',
+  },
+  {
+    icon: <TbBrandPython size={30} />,
+    name: 'Python',
+    startDate: '2023-07-30',
   },
   {
     icon: <TbBrandDocker size={30} />,
     name: 'Docker',
+    startDate: '2023-07-30',
+  },
+  {
+    icon: <TbBrandMysql size={30} />,
+    name: 'MySQL',
+    startDate: '2016-03-30',
+  },
+  {
+    icon: <TbSql size={30} />,
+    name: 'SQLServer',
+    startDate: '2016-03-30',
+  },
+  {
+    icon: <TbBrandBitbucket size={30} />,
+    name: 'Bitbucket',
     startDate: '2023-03-30',
+  },
+  {
+    icon: <TbBrandAzure size={30} />,
+    name: 'Azure',
+    startDate: '2022-03-30',
+  },
+  {
+    icon: <TbBrandGit size={30} />,
+    name: 'GIT',
+    startDate: '2016-03-30',
   },
 ]
 

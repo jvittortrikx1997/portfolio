@@ -5,16 +5,7 @@ import Link from 'next/link'
 import { NavItem } from './nav-item'
 import { motion } from 'framer-motion'
 
-const NavItens = [
-  {
-    label: 'Home',
-    href: '/',
-  },
-  {
-    label: 'Projetos',
-    href: '/projects',
-  },
-]
+
 
 export const Header = () => {
   return (
@@ -29,15 +20,10 @@ export const Header = () => {
           <Image
             width={150}
             height={150}
-            src="/images/logo2.png"
+            src=""
             alt="Logo GB dev"
           ></Image>
         </Link>
-        <nav className="flex items-center gap-2 sm:gap-10">
-          {NavItens.map((item) => (
-            <NavItem {...item} key={item.label} />
-          ))}
-        </nav>
       </div>
     </motion.header>
   )
