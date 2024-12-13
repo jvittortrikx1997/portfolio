@@ -36,7 +36,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:max-w-[530px]"
         >
-          <p className="font-mono text-purple-400">Olá, meu nome é</p>
+          <p className="font-mono text-sky-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">
             João Vitor dos Santos Mendonça
           </h2>
@@ -71,7 +71,7 @@ export const HeroSection = () => {
             height={420}
             src="/images/joaovitor.jpg"
             alt="foto de perfil"
-            className="p-1 border-2 border-purple-500 w-[300px] h-full lg:w-[420px] mb-6 lg:mb-0 lg:rounded-lg rounded-full object-cover hover:shadow-button hover:border-purple-200 transition-all"
+            className="p-1 border-2 border-sky-500 w-[300px] h-full lg:w-[420px] mb-6 lg:mb-0 lg:rounded-lg rounded-full object-cover hover:shadow-button hover:border-sky-200 transition-all"
           />
         </motion.div>
       </div>

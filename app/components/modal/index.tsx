@@ -7,11 +7,11 @@ export const Modal = ({ isOpen = false, onCLick = () => {} }) => {
       onClick={onCLick}
       className={`cursor-pointer h-full w-full flex items-center justify-center`}
     >
-      <div className="h-60 absolute w-72 bg-gray-800 border border-purple-400 rounded">
+      <div className="h-60 absolute w-72 bg-gray-800 border border-sky-400 rounded">
         <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="w-full h-full flex flex-col justify-center items-center">
-            <p className="font-medium text-lg text-red-600">Giulia</p>
-            <p className="font-medium text-base text-red-600">Amor</p>
+            <p className="font-medium text-lg text-sky-600">Giulia</p>
+            <p className="font-medium text-base text-sky-600">Amor</p>
           </div>
           <div className="container w-full h-full flex justify-center items-center">
             <p className="font-medium text-lg text-gray-400">

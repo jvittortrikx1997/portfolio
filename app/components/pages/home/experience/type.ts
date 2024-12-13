@@ -32,7 +32,7 @@ export const experiences = [
     subText: `
       <a
         target="_blank"
-        className="text-gray-500 hover:text-purple-500 transition-colors"
+        className="text-gray-500 hover:text-sky-500 transition-colors"
         href="https://acaruiy.com.br/"
       >
         @Site
@@ -63,7 +63,7 @@ export const experiences = [
     subText: `
       <a
         target="_blank"
-        className="text-gray-500 hover:text-purple-500 transition-colors"
+        className="text-gray-500 hover:text-sky-500 transition-colors"
         href="http://www.arcasistemas.com.br/"
       >
         @Site
